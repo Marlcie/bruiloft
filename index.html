@@ -158,7 +158,7 @@
     content: '';
     position: absolute;
     left: 50%; top: 0; bottom: 0;
-    width: 1px;
+    width: 0px;
     background: linear-gradient(to bottom, transparent, var(--gold-pale) 8%, var(--gold-pale) 92%, transparent);
     transform: translateX(-50%);
   }
@@ -220,7 +220,7 @@
   /* ── Mobiele tijdlijn ── */
   @media (max-width: 620px) {
     /* Middenlijn: 64px van links */
-    .program-grid::before { left: 0px; transform: none; } <!-- 0px was 64px -->
+    .program-grid::before { left: 64px; transform: none; }  
 
     /* Alle items: flex-rij [tijd+hart | content] */
     .program-item {
@@ -270,7 +270,7 @@
       justify-content: center;
     }
     .time-dot svg {
-      width: 0rem !important;
+      width: 1rem !important;
       height: 1rem !important;
       fill: var(--gold) !important;
       filter: drop-shadow(0 0 3px rgba(184,154,90,0.35)) !important;
