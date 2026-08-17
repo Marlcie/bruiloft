@@ -835,6 +835,7 @@
         alt="Debbie en Mark"
         style="display: block; width: 80%; height: auto; margin: 0 auto;"
       >
+      <br><br>
       
     </div>
   </div>
@@ -1559,7 +1560,7 @@ document.addEventListener('keydown', function(e) {
   }
 
   // Pause on hover
-  track.parentElement.addEventListener('mouseenter', () => paused = true);
+  track.parentElement.addEventListener('mouseenter', () => paused = false); /* Dit was true, maar wil dit niet */
   track.parentElement.addEventListener('mouseleave', () => paused = false);
 
   // Start after images load
