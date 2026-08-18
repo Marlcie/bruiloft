@@ -14,7 +14,7 @@
     --gold-pale: #e8d9b8;
     --brown: #6b4f35; 
     --text: #23382c;
-    --text-light: #ffffff; /* #7a6a58; */
+    --text-light: #7a6a58;
     --white: #ffffff;
   }
 
@@ -83,17 +83,17 @@
   .hero-divider::before, .hero-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
   .hero-divider span { font-size: 1.2rem; color: var(--gold); }
 
-  .hero-date { font-family: 'Cormorant Garamond', serif; font-size: clamp(1rem, 3vw, 1.4rem); font-weight: 300; letter-spacing: 0.25em; color: var(--text-light); animation: fadeUp 1s ease 0.5s both; }
+  .hero-date { font-family: 'Cormorant Garamond', serif; font-size: clamp(1rem, 3vw, 1.4rem); font-weight: 300; letter-spacing: 0.25em; color: var(--white); animation: fadeUp 1s ease 0.5s both; }
   .hero-location { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-top: 0.4rem; animation: fadeUp 1s ease 0.6s both; }
 
   .hero-countdown { display: flex; gap: 2.5rem; margin-top: 2.5rem; animation: fadeUp 1s ease 0.8s both; }
   .countdown-item { text-align: center; }
   .countdown-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--gold); display: block; line-height: 1; }
-  .countdown-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-top: 0.3rem; }
+  .countdown-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--white); margin-top: 0.3rem; }
 
   /* CODE GATE */
   .code-gate-hero { margin-top: 3rem; animation: fadeUp 1s ease 1s both; text-align: center; }
-  .code-gate-hero > p { font-size: 0.82rem; color: var(--text-light); letter-spacing: 0.03em; margin-bottom: 1.2rem; line-height: 1.7; }
+  .code-gate-hero > p { font-size: 0.82rem; color: var(--white); letter-spacing: 0.03em; margin-bottom: 1.2rem; line-height: 1.7; }
 
   .code-input-wrap { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; align-items: center; }
 
@@ -116,7 +116,7 @@
   .code-input.error { border-color: #c0392b; }
 
   .code-error { font-size: 0.78rem; color: #c0392b; margin-top: 0.8rem; display: none; }
-  .code-hint { font-size: 0.72rem; color: var(--text-light); margin-top: 1rem; }
+  .code-hint { font-size: 0.72rem; color: var(--white); margin-top: 1rem; }
   .code-hint a { color: var(--gold); text-decoration: none; }
   
     /* SCROLL HINT */
@@ -614,10 +614,10 @@
 
   <h1>Debbie <span class="ampersand">&amp;</span> Mark</h1>
 
-  <div class="hero-divider"><span><span class="time-dot"><svg viewBox="-3 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L8.5 7h2L6 11.5h2L3.5 16h6v5h5v-5h6l-4.5-4.5h2L13.5 7h2L12 2z"/></svg></span></svg></span></div>
+  <div class="hero-divider"><span><span class="time-dot"><svg viewBox="4 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L8.5 7h2L6 11.5h2L3.5 16h6v5h5v-5h6l-4.5-4.5h2L13.5 7h2L12 2z"/></svg></span></svg></span></div>
   <p class="hero-date">Zaterdag 12 december 2026</p>
   <p class="hero-location">Kasteel De Wittenburg</p>
-  <p class="hero-location" style="font-size:0.68rem; letter-spacing:0.15em; margin-top:0.2rem; color:var(--text-light);">Landgoed de Wittenburg 1 · 2244 BV Wassenaar</p>
+  <p class="hero-location" style="font-size:0.68rem; letter-spacing:0.15em; margin-top:0.2rem; color:var(--white);">Landgoed de Wittenburg 1 · 2244 BV Wassenaar</p>
 
   <div class="hero-countdown" id="countdown">
     <div class="countdown-item"><span class="countdown-num" id="cd-days">—</span><span class="countdown-label">Dagen</span></div>
