@@ -135,7 +135,10 @@
   #site-content.fade-in { opacity: 1; }
 
   /* WELCOME BANNER */
-  .welcome-banner { text-align: center; padding: 3rem 2rem 2.5rem; background: linear-gradient(135deg, var(--gold-pale) 0%, var(--cream-dark) 100%); border-bottom: 1px solid var(--gold-pale); }
+  .welcome-banner { text-align: center; padding: 3rem 2rem 2.5rem; background:
+      radial-gradient(ellipse at 20% 50%, rgba(184,154,90,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(184,154,90,0.06) 0%, transparent 50%),
+      var(--cream); border-bottom: 1px solid var(--gold-pale); }
   .guest-type-pill { display: inline-block; background: var(--gold); color: var(--white); font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; padding: 0.4rem 1.2rem; margin-bottom: 1rem; }
   .welcome-banner h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 300; color: var(--text); margin-bottom: 0.6rem; }
   .welcome-banner p { font-size: 0.88rem; color: var(--text-light); line-height: 1.7; max-width: 520px; margin: 0 auto; }
