@@ -1392,8 +1392,11 @@ function unlockSite(type, hasPartner) {
   initScrollObserver();
 
   setTimeout(() => {
-    document.getElementById('site-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 350);
+  window.scrollTo({
+    top: document.getElementById('site-content').offsetTop - 70,
+    behavior: 'smooth'
+  });
+}, 350);
 
   // Toon RSVP popup na korte vertraging
   /* setTimeout(() => {
