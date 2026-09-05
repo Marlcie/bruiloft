@@ -1072,44 +1072,83 @@
               <div class="radio-option"><input type="radio" name="dag-keuze" id="dag-alleen-feest" value="alleen-feest"><label for="dag-alleen-feest">Alleen het feest</label></div>
             </div>
 
-            <!-- Menukaart — verschijnt als "de hele dag" gekozen -->
-            <div id="diner-keuze-wrap" style="display:none; margin-top:1.5rem;">
-              <hr class="form-divider">
-              <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; margin-bottom:0.3rem; color:var(--text);">Jouw menukeuze</p>
-              <p style="font-size:0.8rem; color:var(--text-light); margin-bottom:1.2rem;">Kies per gang één gerecht.</p>
+           <!-- Menukaart — verschijnt als "de hele dag" gekozen -->
 
-              <div class="menu-choice-block">
-                <p class="menu-choice-title">Voorgerecht</p>
-                <div class="menu-choice-options">
-                  <label class="menu-radio"><input type="radio" name="g-voorgerecht" value="Zalm"><span class="menu-radio-label">Zalm<em>mierikswortelcrème · avocado · tomaat</em></span></label>
-                  <label class="menu-radio"><input type="radio" name="g-voorgerecht" value="Beef tataki"><span class="menu-radio-label">Beef tataki<em>ponzu gember dressing · shiitake · komkommer</em></span></label>
-                  <label class="menu-radio"><input type="radio" name="g-voorgerecht" value="Geroosterde avocado"><span class="menu-radio-label">Geroosterde avocado<em>shiitake · radijs</em></span></label>
-                </div>
-              </div>
+<div id="diner-keuze-wrap" style="display:none; margin-top:1.5rem;">
+  <hr class="form-divider">
+  <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; margin-bottom:0.3rem; color:var(--text);">Jouw menukeuze</p>
+  <p style="font-size:0.8rem; color:var(--text-light); margin-bottom:1.2rem;">Kies per gang één gerecht.</p>
 
-              <div class="menu-choice-block">
-                <p class="menu-choice-title">Hoofdgerecht</p>
-                <div class="menu-choice-options">
-                  <label class="menu-radio"><input type="radio" name="g-hoofdgerecht" value="Zeebaars"><span class="menu-radio-label">Zeebaars<em>risotto · groene asperges · beurre blanc met haring kaviaar</em></span></label>
-                  <label class="menu-radio"><input type="radio" name="g-hoofdgerecht" value="Medaillons van kalfsvlees"><span class="menu-radio-label">Medaillons van kalfsvlees<em>gratin · romige truffeljus · courgette</em></span></label>
-                  <label class="menu-radio"><input type="radio" name="g-hoofdgerecht" value="Tortellini"><span class="menu-radio-label">Tortellini<em>paddenstoelen · saus van pompoen · courgette</em></span></label>
-                </div>
-              </div>
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Voorgerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="g-voorgerecht" value="Zalm">
+        <span class="menu-radio-label">Zalm<em>mierikswortelcrème · avocado · tomaat</em></span>
+      </label>
 
-              <div class="menu-choice-block">
-                <p class="menu-choice-title">Nagerecht</p>
-                <div class="menu-choice-options">
-                  <label class="menu-radio"><input type="radio" name="g-nagerecht" value="Hazelnotencrème"><span class="menu-radio-label">Hazelnotencrème<em>caramel · mousse</em></span></label>
-                  <label class="menu-radio"><input type="radio" name="g-nagerecht" value="Framboos"><span class="menu-radio-label">Framboos<em>pure chocolade · coulis</em></span></label>
-                </div>
-              </div>
+```
+  <label class="menu-radio">
+    <input type="radio" name="g-voorgerecht" value="Beef tataki">
+    <span class="menu-radio-label">Beef tataki<em>ponzu gember dressing · shiitake · komkommer</em></span>
+  </label>
 
-              <div class="form-group" style="margin-top:1.2rem;">
-                <label>Allergieën of dieetwensen</label>
-                <input type="text" id="g-diet" placeholder="bijv. glutenvrij, notenallergie, vegetarisch…">
-              </div>
-            </div>
-          </div>
+  <label class="menu-radio">
+    <input type="radio" name="g-voorgerecht" value="Burrata">
+    <span class="menu-radio-label">Burrata<em>basilicum venkel dressing · oer-tomaat · balsamico parels</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Hoofdgerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="g-hoofdgerecht" value="Zeebaars">
+        <span class="menu-radio-label">Zeebaars<em>risotto · groene asperges · beurre blanc met haring kaviaar</em></span>
+      </label>
+
+```
+  <label class="menu-radio">
+    <input type="radio" name="g-hoofdgerecht" value="Entrecote">
+    <span class="menu-radio-label">Entrecote<em>mousseline · peper-cognac jus · paddenstoelen en groene asperges</em></span>
+  </label>
+
+  <label class="menu-radio">
+    <input type="radio" name="g-hoofdgerecht" value="Knolselderij">
+    <span class="menu-radio-label">Knolselderij<em>saus van mosterd en tuinkruiden · mousseline · seizoensgroenten</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Nagerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="g-nagerecht" value="Framboos">
+        <span class="menu-radio-label">Framboos<em>pure chocolade · coulis</em></span>
+      </label>
+
+```
+  <label class="menu-radio">
+    <input type="radio" name="g-nagerecht" value="3 Verschillende kazen">
+    <span class="menu-radio-label">3 Verschillende kazen<em>notenbrood · druiven</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="form-group" style="margin-top:1.2rem;">
+    <label>Allergieën of dieetwensen</label>
+    <input type="text" id="g-diet" placeholder="bijv. glutenvrij, notenallergie, vegetarisch…">
+  </div>
+</div>
+
 
           <!-- Aanwezigheid avondgast -->
           <div id="attendance-avond-wrap" style="display:none; margin-top:1.5rem;">
@@ -1147,41 +1186,80 @@
                 </div>
 
                 <!-- Partner menukaart -->
-                <div id="p-diner-keuze-wrap" style="display:none; margin-top:1.2rem;">
-                  <p style="font-family:'Cormorant Garamond',serif; font-size:1rem; color:var(--text); margin-bottom:0.8rem;">Menukeuze partner</p>
 
-                  <div class="menu-choice-block">
-                    <p class="menu-choice-title">Voorgerecht</p>
-                    <div class="menu-choice-options">
-                      <label class="menu-radio"><input type="radio" name="p-voorgerecht" value="Zalm"><span class="menu-radio-label">Zalm<em>mierikswortelcrème · avocado · tomaat</em></span></label>
-                      <label class="menu-radio"><input type="radio" name="p-voorgerecht" value="Beef tataki"><span class="menu-radio-label">Beef tataki<em>ponzu gember dressing · shiitake · komkommer</em></span></label>
-                      <label class="menu-radio"><input type="radio" name="p-voorgerecht" value="Geroosterde avocado"><span class="menu-radio-label">Geroosterde avocado<em>shiitake · radijs</em></span></label>
-                    </div>
-                  </div>
+<div id="p-diner-keuze-wrap" style="display:none; margin-top:1.2rem;">
+  <p style="font-family:'Cormorant Garamond',serif; font-size:1rem; color:var(--text); margin-bottom:0.8rem;">Menukeuze partner</p>
 
-                  <div class="menu-choice-block">
-                    <p class="menu-choice-title">Hoofdgerecht</p>
-                    <div class="menu-choice-options">
-                      <label class="menu-radio"><input type="radio" name="p-hoofdgerecht" value="Zeebaars"><span class="menu-radio-label">Zeebaars<em>risotto · groene asperges · beurre blanc met haring kaviaar</em></span></label>
-                      <label class="menu-radio"><input type="radio" name="p-hoofdgerecht" value="Medaillons van kalfsvlees"><span class="menu-radio-label">Medaillons van kalfsvlees<em>gratin · romige truffeljus · courgette</em></span></label>
-                      <label class="menu-radio"><input type="radio" name="p-hoofdgerecht" value="Tortellini"><span class="menu-radio-label">Tortellini<em>paddenstoelen · saus van pompoen · courgette</em></span></label>
-                    </div>
-                  </div>
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Voorgerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="p-voorgerecht" value="Zalm">
+        <span class="menu-radio-label">Zalm<em>mierikswortelcrème · avocado · tomaat</em></span>
+      </label>
 
-                  <div class="menu-choice-block">
-                    <p class="menu-choice-title">Nagerecht</p>
-                    <div class="menu-choice-options">
-                      <label class="menu-radio"><input type="radio" name="p-nagerecht" value="Hazelnotencrème"><span class="menu-radio-label">Hazelnotencrème<em>caramel · mousse</em></span></label>
-                      <label class="menu-radio"><input type="radio" name="p-nagerecht" value="Framboos"><span class="menu-radio-label">Framboos<em>pure chocolade · coulis</em></span></label>
-                    </div>
-                  </div>
+```
+  <label class="menu-radio">
+    <input type="radio" name="p-voorgerecht" value="Beef tataki">
+    <span class="menu-radio-label">Beef tataki<em>ponzu gember dressing · shiitake · komkommer</em></span>
+  </label>
 
-                  <div class="form-group" style="margin-top:1.2rem;">
-                    <label>Allergieën of dieetwensen partner</label>
-                    <input type="text" id="p-diet" placeholder="bijv. glutenvrij, notenallergie, vegetarisch…">
-                  </div>
-                </div>
-              </div>
+  <label class="menu-radio">
+    <input type="radio" name="p-voorgerecht" value="Burrata">
+    <span class="menu-radio-label">Burrata<em>basilicum venkel dressing · oer-tomaat · balsamico parels</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Hoofdgerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="p-hoofdgerecht" value="Zeebaars">
+        <span class="menu-radio-label">Zeebaars<em>risotto · groene asperges · beurre blanc met haring kaviaar</em></span>
+      </label>
+
+```
+  <label class="menu-radio">
+    <input type="radio" name="p-hoofdgerecht" value="Entrecote">
+    <span class="menu-radio-label">Entrecote<em>mousseline · peper-cognac jus · paddenstoelen en groene asperges</em></span>
+  </label>
+
+  <label class="menu-radio">
+    <input type="radio" name="p-hoofdgerecht" value="Knolselderij">
+    <span class="menu-radio-label">Knolselderij<em>saus van mosterd en tuinkruiden · mousseline · seizoensgroenten</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="menu-choice-block">
+    <p class="menu-choice-title">Nagerecht</p>
+    <div class="menu-choice-options">
+      <label class="menu-radio">
+        <input type="radio" name="p-nagerecht" value="Framboos">
+        <span class="menu-radio-label">Framboos<em>pure chocolade · coulis</em></span>
+      </label>
+
+```
+  <label class="menu-radio">
+    <input type="radio" name="p-nagerecht" value="3 Verschillende kazen">
+    <span class="menu-radio-label">3 Verschillende kazen<em>notenbrood · druiven</em></span>
+  </label>
+</div>
+```
+
+  </div>
+
+  <div class="form-group" style="margin-top:1.2rem;">
+    <label>Allergieën of dieetwensen partner</label>
+    <input type="text" id="p-diet" placeholder="bijv. glutenvrij, notenallergie, vegetarisch…">
+  </div>
+</div>
+
 
               <!-- Partner aanwezigheid avond -->
               <div id="partner-attendance-avond-wrap" style="display:none; margin-top:1.2rem;">
