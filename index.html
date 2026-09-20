@@ -1313,15 +1313,83 @@
    partner: true of false
 ══════════════════════════════════════════ */
 const CODES = {
+  /* Existing codes */
   '9999DP': { type: 'dag',   partner: true  },
   '9999DG': { type: 'dag',   partner: false },
   '9999AP': { type: 'avond', partner: true  },
   '9999AG': { type: 'avond', partner: false },
-  '2317DE': { type: 'dag', partner: true  }, /* Debbie en Mark */
-  '2136AS': { type: 'dag', partner: true  }, /* Ricardo */
-  '2134LE': { type: 'dag', partner: true  }, /* Carmen */
-  '0000AA': { type: 'avond', partner: false } /* end */
+
+  /* DAY */
+  '2317DE': { type: 'dag', partner: true  },
+  '2134KP': { type: 'dag', partner: true  },
+  '2134LE': { type: 'dag', partner: true  },
+  '2136AS': { type: 'dag', partner: true  },
+  '1761EB': { type: 'dag', partner: true  },
+  '4909BB': { type: 'dag', partner: true  },
+  '6911AD': { type: 'dag', partner: true  },
+  '1901VA': { type: 'dag', partner: true  },
+  '38330': { type: 'dag', partner: true },
+  '6321AH': { type: 'dag', partner: true  },
+  '1171BC': { type: 'dag', partner: true  },
+  '2134WB': { type: 'dag', partner: true  },
+  '2132BH': { type: 'dag', partner: true  },
+  '2315GB': { type: 'dag', partner: true  },
+  '1447JE': { type: 'dag', partner: true  },
+  '2716LV': { type: 'dag', partner: true  },
+  '2313BA': { type: 'dag', partner: true  },
+  '2152PM': { type: 'dag', partner: true  },
+  '2353SJ': { type: 'dag', partner: true  },
+  '2317GV': { type: 'dag', partner: true  },
+  '2253HL': { type: 'dag', partner: true  },
+  '2332CV': { type: 'dag', partner: true  },
+  '4131AG': { type: 'dag', partner: true  },
+  '2133KR': { type: 'dag', partner: true  },
+  '2135JM': { type: 'dag', partner: true  },
+  '2132SR': { type: 'dag', partner: true  },
+  '2132ZB': { type: 'dag', partner: true  },
+  '2011TL': { type: 'dag', partner: true  },
+  '2121RM': { type: 'dag', partner: true  },
+  '2134AK': { type: 'dag', partner: true  },
+  '3543KC': { type: 'dag', partner: true  },
+  '3079NB': { type: 'dag', partner: true  },
+  '3146BX': { type: 'dag', partner: true  },
+  '2353TG': { type: 'dag', partner: true  },
+  '2252TN': { type: 'dag', partner: true  },
+  '1433WE': { type: 'dag', partner: true  },
+  '3512CM': { type: 'dag', partner: true  },
+  '2315GT': { type: 'dag', partner: true  },
+  '2321AN': { type: 'dag', partner: true  },
+  '2274CD': { type: 'dag', partner: true  },
+  '75014': { type: 'dag', partner: true },
+  'OX1 4AU': { type: 'dag', partner: true },
+  '1062HD': { type: 'dag', partner: true  },
+  '2332TN': { type: 'dag', partner: true  },
+  '2317DX': { type: 'dag', partner: true  },
+  'LA14AH': { type: 'dag', partner: true  },
+  '5625AG': { type: 'dag', partner: true  },
+  '2511EZ': { type: 'dag', partner: true  },
+  '2341HZ': { type: 'dag', partner: true  },
+  '2593BT': { type: 'dag', partner: true  },
+  '2312LD': { type: 'dag', partner: true  },
+  '2181WD': { type: 'dag', partner: true  },
+  '3826PB': { type: 'dag', partner: true  },
+
+  /* AVOND */
+  '2037KW': { type: 'avond', partner: true },
+  '2011XW': { type: 'avond', partner: true },
+  '2132ZK': { type: 'avond', partner: true },
+  '2142EA': { type: 'avond', partner: true },
+  '2313DX': { type: 'avond', partner: true },
+  '2321KL': { type: 'avond', partner: true },
+  '2322KL': { type: 'avond', partner: true },
+  '2334EW': { type: 'avond', partner: true },
+  '1060LW': { type: 'avond', partner: true },
+  '2321JV': { type: 'avond', partner: true },
+  '2135PZ': { type: 'avond', partner: true },
+  '1422ZL': { type: 'avond', partner: true },
+  '2317AE': { type: 'avond', partner: true }
 };
+</script>
 
 let currentType    = null;
 let currentPartner = false;
