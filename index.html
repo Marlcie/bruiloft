@@ -1608,17 +1608,17 @@ async function submitRSVP() {
       if (partnerKeuze === 'ja') {
         const pFirst = document.getElementById('p-first').value.trim();
         const pLast  = document.getElementById('p-last').value.trim();
-        summary += `\n\n Partner: ${pFirst} ${pLast}`;
+        summary += `\n\n👫 Partner: ${pFirst} ${pLast}`;
         if (isDay) {
           const pKeuze = document.querySelector('input[name="p-dag-keuze"]:checked')?.value;
-          summary += `\n   Aanwezigheid: ${pKeuze === 'hele-dag' ? 'De hele dag' : pKeuze === 'alleen-feest' ? 'Alleen het feest' : 'Niet ingevuld'}`;
+          summary += `\n🌞  Aanwezigheid: ${pKeuze === 'hele-dag' ? 'De hele dag' : pKeuze === 'alleen-feest' ? 'Alleen het feest' : 'Niet ingevuld'}`;
 
           if (pKeuze === 'hele-dag') {
             const pvg   = document.querySelector('input[name="p-voorgerecht"]:checked');
             const phg   = document.querySelector('input[name="p-hoofdgerecht"]:checked');
             const png   = document.querySelector('input[name="p-nagerecht"]:checked');
             const pdiet = document.getElementById('p-diet').value.trim();
-            summary += `\n   Menukeuze partner:`;
+            summary += `\n🍽️   Menukeuze partner:`;
             summary += `\n   Voorgerecht: ${pvg  ? pvg.value : '—'}`;
             summary += `\n   Hoofdgerecht: ${phg ? phg.value : '—'}`;
             summary += `\n   Nagerecht: ${png    ? png.value : '—'}`;
