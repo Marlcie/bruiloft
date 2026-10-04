@@ -1608,7 +1608,7 @@ async function submitRSVP() {
       if (partnerKeuze === 'ja') {
         const pFirst = document.getElementById('p-first').value.trim();
         const pLast  = document.getElementById('p-last').value.trim();
-        summary += `\n\n👫 Partner: ${pFirst} ${pLast}`;
+        summary += `\n\n Partner: ${pFirst} ${pLast}`;
         if (isDay) {
           const pKeuze = document.querySelector('input[name="p-dag-keuze"]:checked')?.value;
           summary += `\n   Aanwezigheid: ${pKeuze === 'hele-dag' ? 'De hele dag' : pKeuze === 'alleen-feest' ? 'Alleen het feest' : 'Niet ingevuld'}`;
