@@ -1625,7 +1625,6 @@ async function submitRSVP() {
             if (pdiet) summary += `\n   Allergieën/dieet: ${pdiet}`;
           }
         } else {
-          const pFeest = document.getElementById('p-avond-feest').checked;
           summary += `\n   Feest: ${pFeest ? 'Ja' : 'Nee'}`;
         }
       } else {
